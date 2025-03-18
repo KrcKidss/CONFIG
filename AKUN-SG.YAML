@@ -1,0 +1,46 @@
+proxies:
+  - name: "\U0001F1F8\U0001F1EC DO"
+    type: vmess
+    server: quiz.vidio.com.cdn.cloudflare.net
+    port: 443
+    uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: usv-2.openv2ray.com
+    network: ws
+    ws-opts:
+      path: /u/opentunnel.net-sg
+      headers:
+        Host: usv-2.openv2ray.com
+  - name: sg.serverkit
+    type: vmess
+    server: quiz.vidio.com.cdn.cloudflare.net
+    port: 443
+    uuid: ab82ba4c-7fd6-4380-ae0e-00b7fe01561f
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: true
+    servername: sg.serverkit.pw
+    network: ws
+    ws-opts:
+      path: /v2ray-vmess/tls
+      headers:
+        Host: sg.serverkit.pw
+  - name: SG Akamai Connected
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: fac33390-b333-4426-9a60-be96f5fe9e88
+    skip-cert-verify: true
+    sni: nuclear.us.kg
+    network: ws
+    ws-opts:
+      path: /free/103.3.60.117:587
+      headers:
+        Host: nuclear.us.kg
+    udp: true
