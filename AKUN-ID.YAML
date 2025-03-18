@@ -1,0 +1,35 @@
+
+
+proxies:
+- name: "\U0001F1EE\U0001F1E9 NUSA"
+  type: vmess
+  server: quiz.vidio.com.cdn.cloudflare.net
+  port: 443
+  uuid: xrayvmessJffqM02qsMpsA8Y
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: nusa.ordervip.cloud
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: nusa.ordervip.cloud 
+- name: "\U0001F1F8\U0001F1EC DO"
+  type: vmess
+  server: quiz.vidio.com.cdn.cloudflare.net
+  port: 443
+  uuid: xrayvmessJffqM02qsMpsA8Y
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: sgdo.ordervip.cloud
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sgdo.ordervip.cloud 
